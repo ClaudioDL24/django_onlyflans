@@ -16,11 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from static_pages.views import index, about, welcome
+from static_pages.views import indice, about, welcome
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(" ", index, name="index"),
+    path(" ", indice, name="indice"),
     path("about", about, name="about"),
     path("welcome", welcome, name="welcome"),
 ]
