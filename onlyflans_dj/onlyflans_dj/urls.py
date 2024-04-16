@@ -20,7 +20,7 @@ from static_pages.views import indice, about, welcome
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(" ", indice, name="indice"),
+    path("", indice, name="indice"),
     path("about", about, name="about"),
     path("welcome", welcome, name="welcome"),
 ]
