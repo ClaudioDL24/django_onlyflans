@@ -1,23 +1,35 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset= "UTF-8">
     <meta name="viewport" content="width=divice-width, inicial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">    
     <title>Document</title>
 </head>
-
 <body>
-    {% block 'header' %}
-    <div style=" background: red;">
-        header
-    </div>
-    {% endblock %}
-
     {% block 'navbar' %}
-    <div style=" background: yellow;">
-        navbar
-    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary .bg-primary-subtle">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'img/onlyflans_logo.png' %}" alt="onlyflans_logo" height="35">
+            </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Index</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/welcome">Welcome</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     {% endblock %}
 
     {% block 'content' %}
