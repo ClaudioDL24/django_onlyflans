@@ -1,7 +1,85 @@
 {% extends 'static_base.html' %}
-
+{% load static %}
 {% block 'content' %}
-    <div>
-        index
+<div class="container">
+    <div class="row">
+      <!-- Primera fila de cards -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="{% static 'img/flan2.jpg' %}" class="card-img-top" alt="Imagen 1">
+          <div class="card-body">
+            <h5 class="card-title">Flan 1</h5>
+            <p class="card-text">Precio: $10.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+            <img src="{% static 'img/flan2.jpg' %}"  class="card-img-top" alt="Imagen 2">
+          <div class="card-body">
+            <h5 class="card-title">Flan 2</h5>
+            <p class="card-text">Precio: $15.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="{% static 'img/flan3.jpg' %}" class="card-img-top" alt="Imagen 3">
+          <div class="card-body">
+            <h5 class="card-title">Flan 3</h5>
+            <p class="card-text">Precio: $20.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="{% static 'img/flan4.jpg' %}" class="card-img-top" alt="Imagen 4">
+          <div class="card-body">
+            <h5 class="card-title">Flan 4</h5>
+            <p class="card-text">Precio: $25.00</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Segunda fila de cards -->
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="{% static 'img/flan5.jpg' %}" class="card-img-top" alt="Imagen 5">
+          <div class="card-body">
+            <h5 class="card-title">Flan 5</h5>
+            <p class="card-text">Precio: $30.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="{% static 'img/flan6.jpg' %}" class="card-img-top" alt="Imagen 6">
+          <div class="card-body">
+            <h5 class="card-title">Flan 6</h5>
+            <p class="card-text">Precio: $35.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="{% static 'img/flan7.jpg' %}" class="card-img-top" alt="Imagen 7">
+          <div class="card-body">
+            <h5 class="card-title">Flan 7</h5>
+            <p class="card-text">Precio: $40.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="{% static 'img/flan8.jpg' %}" class="card-img-top" alt="Imagen 8">
+          <div class="card-body">
+            <h5 class="card-title">Flan 8</h5>
+            <p class="card-text">Precio: $45.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

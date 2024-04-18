@@ -1,7 +1,10 @@
 {% extends 'static_base.html' %}
 
 {% block 'content' %}
-    <div>
-        welcome
-    </div>
+    <!-- Mensaje de bienvenida según la presencia de datos de usuario -->
+    {% if nombre_usuario %}
+        <p class="text-center">Bienvenido, {{ nombre_usuario }}</p>
+    {% else %}
+        <p class="text-center">Bienvenido, cliente</p>
+    {% endif %}
 {% endblock %}
