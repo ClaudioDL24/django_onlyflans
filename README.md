@@ -28,12 +28,15 @@ El proyecto estará dividido en 5 hitos incrementales que te permitirán comenza
 
 ## Autores
 
+-Claudio Merino Fuentes.
+-Juan Pablo Garrido Bermudez.
+
 ## Instalación
 
 Instrucciones.
 
 ## Uso
-
+git
 Instrucciones.
 
 ## Contribuir
