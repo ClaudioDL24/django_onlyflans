@@ -36,7 +36,7 @@ El proyecto estará dividido en 5 hitos incrementales que te permitirán comenza
 Instrucciones.
 
 ## Uso
-git
+
 Instrucciones.
 
 ## Contribuir
