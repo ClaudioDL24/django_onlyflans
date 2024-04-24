@@ -2,11 +2,29 @@
 
 {% block 'content' %}
 <div class="container">
-    Contact
-    <form action="/contact" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="Submit">
-    </form>
+    <div class="row justify-content-center">
+        <div class="col-5 my-3">
+            <form class="pt-4 px-4 border rounded-3 bg-body-tertiary" data-bitwarden-watching="1" action="/contact" method="post">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Name" name="custumer_name" aria-label="Name">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Email" name="customer_email" aria-label="Email">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">Message</span>
+                    <textarea class="form-control" name="Message" aria-label="With textarea"></textarea>
+                </div>
+
+                <div class="mb-3 text-center">
+                    <button class="my-2 w-50 btn btn-lg btn-primary"></button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 {% endblock %}

@@ -1,10 +1,9 @@
 {% extends 'static_base.html' %}
-{% load static %}
 {% block 'content' %}
 <div class="container">
   <div class="row">
     <!-- Primera fila de cards -->
-    {% for flan in flanes_pub %}
+    {% for flan in flans %}
     <div class="col-md-3 mb-4">
       <div class="card">
         <img src="{{ flan.image_url }}" class="card-img-top" alt="Imagen 1">

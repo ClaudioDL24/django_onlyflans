@@ -1,5 +1,5 @@
-from email.policy import default
-from unittest.util import _MAX_LENGTH
+#from email.policy import default
+#from unittest.util import _MAX_LENGTH
 import uuid
 from django.db import models
 
