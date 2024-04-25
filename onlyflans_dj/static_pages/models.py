@@ -11,6 +11,8 @@ class Flan(models.Model):
     image_url= models.URLField()    
     slug= models.SlugField()
     is_private= models.BooleanField()
+    precio = models.DecimalField(max_digits=10, decimal_places=2,  default=0.0)
+    receta = models.TextField(default="")  # Campo para almacenar la receta del flan
 
 class ContactForm(models.Model):
     contact_form_uuid = models.UUIDField(default=uuid.uuid4, editable=False)

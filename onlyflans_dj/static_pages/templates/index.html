@@ -6,10 +6,13 @@
     {% for flan in flans %}
     <div class="col-md-3 mb-4">
       <div class="card">
-        <img src="{{ flan.image_url }}" class="card-img-top" alt="Imagen 1">
-        <div class="card-body">
-          <h5 class="card-title">{{ flan.name }}</h5>
-          <p class="card-text">{{ flan.description }}</p>
+        <div class="product-card">
+          <img src="{{ flan.image_url }}" class="card-img-top" alt="Imagen 1">
+          <div class="product-info">
+            <h5 class="card-title">{{ flan.name }}</h5>
+            <p class="card-text">{{ flan.description }}</p>
+            <div class="product-price" data-price="{{ flan.precio }}">Precio: ${{ flan.precio }}</div>
+          </div>
         </div>
       </div>
     </div>
